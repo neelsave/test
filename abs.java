@@ -4,21 +4,26 @@ class abs
  {
    Chitti c = new Chitti();
    c.makeSound();
+   c.walk();
  }
 }
 
 
-abstract class robot
+interface robot
 {
- int legs = 0;
- abstract void makeSound();
+ public void makeSound();
+ public void walk();
 }
 
-class Chitti extends robot
+class Chitti implements robot
 {
  public void  makeSound()
  {
   System.out.println("hello my name is chiiti the robot");
+ }
+ public void walk()
+ {
+  System.out.println("walking");
  }
 }
 
