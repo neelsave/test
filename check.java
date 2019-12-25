@@ -15,7 +15,7 @@ class check
 
 class Animal
 {
-  public void makeSound()
+  void makeSound()
   {
    System.out.println("hello world!");
   }
@@ -23,7 +23,7 @@ class Animal
 
 class Cat extends Animal
 {
-  public void makeSound()
+  void makeSound()
   {
    System.out.println("meow");
   }
@@ -31,7 +31,7 @@ class Cat extends Animal
 
 class Dog extends Animal
 {
-  public void makeSound()
+  void makeSound()
  {
   System.out.println("boo-boo");
  }
